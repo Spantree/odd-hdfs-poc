@@ -14,7 +14,7 @@ sql-metadata = "^2.6.0"
 loguru = "^0.6.0"
 oddrn-generator = "^0.1.75"
 funcy = "^2.0"
-odd-models = "^2.0.29"
+odd-models = "^2.0.30"
 click = "^8.1.3"
 
 [tool.poetry.group.dev.dependencies]
