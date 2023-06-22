@@ -3,14 +3,11 @@ from typing import Optional
 from oddrn_generator.path_models import BasePathsModel
 
 
-class S3PathsModel(BasePathsModel):
-    host: Optional[str]
-    owner: Optional[str]
+# Let's say we can uniquely identify HDFS datasets by their path
+class HDFSPathsModel(BasePathsModel):
     path: Optional[str]
 
     class Config:
         dependencies_map = {
-            "host": ("host",),
-            "path": ("host", "path"),
-            "owner": ("host", "path", "owner"),
+            "path": ("path",),
         }
