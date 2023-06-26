@@ -35,7 +35,7 @@ def main():
 
     with DataSource(DATASOURCE_ODDRN, client=client) as ds:
         hdfs_artifact = HDFSArtifact.from_url(
-            "http://10.77.101.155:9870/sparkapps/spark-resources/spark/submit_test/cat_report.zip"
+            "http://myhost:9870/sparkapps/test/test_spark_job.py"
         )
         ds.add_data_asset(hdfs_artifact)
 
